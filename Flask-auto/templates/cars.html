@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Автомобили
+{% endblock%}
+
+{% block body %}
+<header id="masthead" class="site-header container" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title text-center"><a>Авто в наличии</a></h1>
+        </div>
+</header>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Название авто</th>
+        <th scope="col">Статус</th>
+        <th scope="col">Цена</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for el in data %}
+            <tr>
+                <th scope="row">{{el.id}}</th>
+                <td>{{el.title}}</td>
+                <td>{{el.status}}</td>
+                <td>{{el.price}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+</body>
+{% endblock%}

@@ -1,0 +1,13 @@
+input[type=submit] {
+    border-radius: 12px;
+    color: black;
+    background-color: cornflowerblue;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10em;
+    margin-left: 500px;
+}
+
+input[type=submit]:hover {
+    border: 2px solid cornflowerblue; /* Green */
+}
